@@ -1,0 +1,36 @@
+buildscript {
+    ext.versions = [
+            'minSdk': 14,
+            'compileSdk': 30,
+            'kotlin': '1.5.21',
+            'androidPlugin': '7.0.0',
+            'constraintLayout': '2.1.2',
+    ]
+    ext.deps = [
+            androidPlugin: "com.android.tools.build:gradle:${versions.androidPlugin}",
+            'kotlin': [
+                    'plugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+                    'stdlib': "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
+            ],
+            constraintLayout: "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
+    ]
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath deps.androidPlugin
+        classpath deps.kotlin.plugin
+    }
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

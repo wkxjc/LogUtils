@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnVerbose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verbose"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btnDebug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/debug"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerbose" />
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnDebug" />
+
+    <Button
+        android:id="@+id/btnWarn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warn"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnInfo" />
+
+    <Button
+        android:id="@+id/btnError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnWarn" />
+
+    <Button
+        android:id="@+id/btnWtf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wtf"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnError" />
+
+    <Button
+        android:id="@+id/btnStackOffset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stackOffset"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnWtf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

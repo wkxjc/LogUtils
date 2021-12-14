@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk versions.compileSdk
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+}
+
+dependencies {
+    api deps.kotlin.stdlib
+}

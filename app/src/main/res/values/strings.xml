@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LogUtils</string>
+    <string name="hello">Hello</string>
+    <string name="error">Error</string>
+    <string name="stackOffset">Stack Offset</string>
+    <string name="wtf">WTF</string>
+    <string name="verbose">Verbose</string>
+    <string name="debug">Debug</string>
+    <string name="info">Info</string>
+    <string name="warn">Warn</string>
+</resources>
